@@ -7,6 +7,13 @@
 //
 
 import Foundation
+var table = HashTable<String, String>()
+table.setKey("Hello", withValue: "Hi")
+table.setKey("Jay", withValue: "Awesome")
+table.setKey("Michael", withValue: "Sensei")
+table.setKey("Jimmy", withValue: "Ninja")
 
-println("Hello, World!")
-
+print(table.getValueAtKey("Hello"))
+print(table.getValueAtKey("Jay"))
+print(table.getValueAtKey("Michael"))
+print(table.getValueAtKey("Jimmy"))
